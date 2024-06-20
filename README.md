@@ -1,20 +1,26 @@
 # make-scoop-windows
 
-```
- _________________________________________ 
-/ You say you are lying. But if           \
-| everything you say is a lie, then you   |
-| are telling the truth. You cannot tell  |
-| the truth because everything you say is |
-| a lie. You lie, you tell the truth ...  |
-| but you cannot, for you lie.            |
-|                                         |
-| -- Norman the android, "I, Mudd",       |
-\ stardate 4513.3                         /
- ----------------------------------------- 
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+Instalación del comando `make` en Windows usando [Scoop](https://scoop.sh).
+
+## Pasos a seguir
+
+1. Abrir una ventana de PowerShell SIN privilegios de administrador.
+
+   ![](capturas/scoop1.png)
+
+2. Instalar [Scoop](https://scoop.sh):
+
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+    ```
+
+   ![](capturas/scoop2.png)
+
+3. Instalar el comando `make`:
+
+    ```powershell
+    scoop install make
+    ```
+
+   ![](capturas/scoop3.png)
